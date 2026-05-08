@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OLDCODER-777</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:#08111f;
+      overflow:hidden;
+    }
+
+    .bg1,
+    .bg2{
+      position:absolute;
+      border-radius:50%;
+      filter:blur(100px);
+    }
+
+    .bg1{
+      width:260px;
+      height:260px;
+      background:#00ff9950;
+      top:-80px;
+      left:-80px;
+    }
+
+    .bg2{
+      width:240px;
+      height:240px;
+      background:#0066ff50;
+      bottom:-80px;
+      right:-80px;
+    }
+
+    .card{
+      width:360px;
+      padding:30px;
+      border-radius:25px;
+      background:rgba(255,255,255,0.05);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,0.1);
+      text-align:center;
+      position:relative;
+      z-index:2;
+      box-shadow:0 0 30px rgba(0,255,153,0.25);
+      transition:.4s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px) scale(1.02);
+      box-shadow:0 0 40px rgba(0,255,153,0.5);
+    }
+
+    .logo{
+      width:95px;
+      height:95px;
+      border-radius:50%;
+      margin:auto;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(135deg,#00ff99,#0066ff);
+      color:white;
+      font-size:38px;
+      font-weight:bold;
+      box-shadow:0 0 25px #00ff99;
+    }
+
+    h1{
+      margin-top:20px;
+      color:white;
+      font-size:30px;
+    }
+
+    .number{
+      margin-top:12px;
+      color:#00ff99;
+      font-size:18px;
+      font-weight:bold;
+    }
+
+    .desc{
+      margin-top:18px;
+      color:#c5c5c5;
+      font-size:13px;
+      line-height:1.6;
+    }
+
+    .skills{
+      margin-top:22px;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .skills span{
+      padding:7px 14px;
+      border-radius:20px;
+      border:1px solid #00ff99;
+      color:#00ff99;
+      font-size:12px;
+      transition:.3s;
+    }
+
+    .skills span:hover{
+      background:#00ff99;
+      color:#08111f;
+      transform:scale(1.08);
+      box-shadow:0 0 15px #00ff99;
+    }
+
+    .typing{
+      margin-top:25px;
+      color:#58a6ff;
+      font-size:14px;
+      white-space:nowrap;
+      overflow:hidden;
+      border-right:2px solid #58a6ff;
+      width:0;
+      margin-inline:auto;
+      animation:
+      typing 5s steps(30) infinite alternate,
+      blink .7s infinite;
+    }
+
+    @keyframes typing{
+      from{ width:0; }
+      to{ width:260px; }
+    }
+
+    @keyframes blink{
+      50%{ border-color:transparent; }
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:10px 25px;
+      border-radius:30px;
+      text-decoration:none;
+      color:white;
+      background:linear-gradient(135deg,#00ff99,#0066ff);
+      font-size:14px;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.06);
+      box-shadow:0 0 20px #00ff99;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="bg1"></div>
+  <div class="bg2"></div>
+
+  <div class="card">
+
+    <div class="logo">
+      &lt;/&gt;
+    </div>
+
+    <h1>OLDCODER-777</h1>
+
+    <div class="number">
+      📞 99-388-18-46
+    </div>
+
+    <div class="desc">
+      Frontend dasturchi 🚀<br>
+      HTML, CSS, SCSS va JS bilan 
+      zamonaviy saytlar qilaman.
+    </div>
+
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JS</span>
+      <span>SCSS</span>
+    </div>
+
+    <div class="typing">
+      console.log("OLDCODER-777");
+    </div>
+
+    <a href="#" class="btn">
+      CONTACT
+    </a>
+
+  </div>
+
+</body>
+</html>
